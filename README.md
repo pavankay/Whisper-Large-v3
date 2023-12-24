@@ -21,9 +21,35 @@ pip install --upgrade git+https://github.com/huggingface/transformers.git accele
 pip install SpeechRecognition
 ```
 ### FFmpeg Installation
-FFmpeg is required for processing audio files. Follow these steps to install it:
-- **Windows/Mac/Linux**: 
-  - Visit the [FFmpeg official website](https://ffmpeg.org/download.html) and follow the instructions for your operating system.
+FFmpeg is essential for processing audio files. Begin by installing it:
+
+- Visit the [FFmpeg official website](https://ffmpeg.org/download.html) and download the appropriate binaries for your operating system.
+
+#### Windows
+1. Extract the downloaded files and place the folder in the "C:/" directory.
+2. Rename the folder to "FFmpeg". Your directory should now look like this: "C:/FFmpeg".
+3. Add FFmpeg to your system path:
+   - Right-click on 'This PC' or 'My Computer' and select 'Properties'.
+   - Click on 'Advanced system settings' and then 'Environment Variables'.
+   - Under 'System Variables', find and select 'Path', then click 'Edit'.
+   - Click 'New' and add the path to the FFmpeg bin folder, e.g., "C:/FFmpeg/bin"
+   - Click 'OK' to close all dialog boxes.
+
+#### Mac
+1. After installing FFmpeg, open Terminal.
+2. Add FFmpeg to your system path using the command:
+   ```bash
+   export PATH="/path/to/FFmpeg/bin:$PATH"
+   ```
+   Replace "/path/to/FFmpeg/bin" with the actual path to the FFmpeg bin directory.
+
+#### Linux
+1. Install FFmpeg using your distribution's package manager (e.g., `apt`, `yum`, or `pacman`).
+2. Most Linux distributions will automatically add FFmpeg to your system path. If not, you can add it manually using:
+   ```bash
+   export PATH="/path/to/FFmpeg/bin:$PATH"
+   ```
+   Replace "/path/to/FFmpeg/bin" with the actual path to the FFmpeg bin directory.
 ### PyTorch Installation
 - **Windows**:
   - Without GPU:
