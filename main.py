@@ -42,8 +42,9 @@ speech_recognizer = sr.Recognizer()
 
 with sr.Microphone() as source:
     print("Start speaking...")
-    # Modify the timeout and phrase_time_limit as needed
-    recorded_audio = speech_recognizer.listen(source, timeout=10, phrase_time_limit=30)
+    # `timeout` is the maximum number of seconds that it will wait for the start of the speech.
+    #`phrase_time_limit` is the maximum number of seconds that it will allow a phrase to continue before stopping.
+    recorded_audio = speech_recognizer.listen(source, timeout=20, phrase_time_limit=40)
     print("Processing speech...")
 
 # Converting Audio to Bytes
