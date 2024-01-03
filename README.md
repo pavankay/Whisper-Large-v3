@@ -1,5 +1,5 @@
 
-# Whisper-v3
+# Whisper-Large-v3
 In this projcet we use the Whisper v3 model to record using speech recognition and use the whisper v3 model to transcribe it. Whisper v3 can also transcribe in diffrent languges though it is not the best.
 ## About
 OpenAI's Whisper is an advanced automatic speech recognition (ASR) system designed for transcribing audio files. This repository runs the Whisper v3 model
