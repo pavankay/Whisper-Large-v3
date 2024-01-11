@@ -7,12 +7,12 @@ OpenAI's Whisper is an advanced automatic speech recognition (ASR) system design
 ## Installation
 
 ### Prerequisites
-- Python 3.11.5 or newer. [Download here](https://www.python.org/downloads/release/python-3120/) and make sure it's added to PATH.
+- Python 3.11.5 or newer (this has only been tested on 3.11.5). [Download here](https://www.python.org/downloads/release/python-3120/) and make sure it's added to PATH.
 - If you have a GPU:
   - NVIDIA GPU: Install [CUDA 12.1](https://developer.nvidia.com/cuda-12-1-0-download-archive?).
 
 ### Python Dependencies
-Run the following commands to install necessary Python packages:
+Run the following commands to install the necessary Python packages:
 ```bash
 pip install --upgrade pip
 pip install --upgrade git+https://github.com/huggingface/transformers.git accelerate datasets[audio]
